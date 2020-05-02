@@ -1,4 +1,0 @@
-1
-//MSG-Start//
-Here is the message!
-//MSG-Finish//
