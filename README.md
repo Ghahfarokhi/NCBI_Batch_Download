@@ -1,2 +1,4 @@
-# RefSeq_Downloader
-Download and annotate the RefSeq for a large set of genomic coordinates using an Excel workbook.
+# Retrieve and Annotate Sequences from NCBI using Excel
+
+Here are the instructions:
+
