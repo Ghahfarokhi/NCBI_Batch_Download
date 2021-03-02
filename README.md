@@ -34,10 +34,6 @@ alt="Excel - download and annotate genbank files"/>
 
 ---
 
-[<img src="../ghahfarokhi.github.io/assets/img/genbank_batch_downloader.png">](https://github.com/Ghahfarokhi/ncbi_batch_download)
-
----
-
 ## Instruction
 
 #### Youtube
