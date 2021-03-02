@@ -1,0 +1,14 @@
+{
+  "title": "Excel - Batch Sequence Downloader",
+  "description" : "Download and annotate genbank files using an Excel workbook",
+  "ogTitle" : "Excel - Batch Sequence Downloader",
+  "ogImage" : "data/img/cover.png",
+  "ogDescription" : "Download and annotate genbank files using an Excel workbook",
+  "ogUrl" : "https://amirtaheri.info/NCBI_Batch_Download/",
+  "ogSiteName" : "amirtaheri.info",
+  "ogType" : "science",
+  "icon" : "../ghahfarokhi.github.io/assets/img/favicon.ico",
+  "mainCSS" : "../ghahfarokhi.github.io/src/css/main.css",
+  "navbar" : "../ghahfarokhi.github.io/common/navbar.html",
+  "footer" : "../ghahfarokhi.github.io/common/footer.html"
+}
