@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
 
-  <!-- head configurations will be updated from config.json file -->
+  <!-- head configurations will be updated according to key:values within the config.json file -->
   <title id="title"></title>
+  <meta id="author" name="author" content="">
+	<meta id="description" name="description" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta id="description" name="description" content="">
+
   <meta id="ogTitle" property="og:title" content=""/>
-  <meta id="ogImage" property="og:image" content=""/>
   <meta id="ogDescription" property="og:description" content=""/>
+  <meta id="ogImage" property="og:image" content=""/>
   <meta id="ogUrl" property="og:url" content=""/>
-  <meta id="ogSiteName" property="og:site_name" content=""/>
-  <meta id="ogType" property="og:type" content=""/>
 
 	<link id="main-css" rel="stylesheet" type="text/css"/>
   <link id="icon" rel="icon" />
@@ -24,17 +24,17 @@
 
 </head>
 <body>
-  <!-- nav bar -->
+  <!-- nav bar placeholder -->
 	<div id="include-navbar"></div>
 
-  <!--  main body -->
+  <!--  main body placeholder -->
 	<div id="main-container" class="pages">
     <div id="download-repo-div" class="hidden">
-      <a id="download-repo" href=""><img id="download-repo-icon"></a>
+      <a id="download-repo" href=""><img id="download-repo-icon">Download</a>
     </div>
   </div>
 
-  <!-- footer -->
+  <!-- footer placeholder -->
   <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
 	<script type="IN/Share" data-url=""></script>
 	<div id="include-footer"></div>
@@ -47,14 +47,13 @@
        * Head
       ******************/
       $("#title").text(jsonConfig.title);
+      $("#author").text(jsonConfig.author);
       $("#description").attr('content', jsonConfig.description);
       // og stuff
       $("#ogTitle").attr('content', jsonConfig.ogTitle);
       $("#ogDescription").attr('content', jsonConfig.ogDescription);
       $("#ogImage").attr('content', jsonConfig.ogImage);
       $("#ogUrl").attr('content', jsonConfig.ogUrl);
-      $("#ogSiteName").attr('content', jsonConfig.ogSiteName);
-      $("#ogType").attr('content', jsonConfig.ogType);
       // universal stylesheets
       $("#icon").attr('href', jsonConfig.icon);
       $("#main-css").attr('href', jsonConfig.mainCSS);
@@ -67,7 +66,7 @@
       $.get(jsonConfig.markdownFile , function(data) {
         var converter = new showdown.Converter(),
           html = converter.makeHtml(data);
-        $("#main-container").append(html);
+        $("#main-container").prepend(html);
       });
       // download icon
       if (jsonConfig.downloadRepo === true) {
