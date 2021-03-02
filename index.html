@@ -28,7 +28,7 @@
   <!--  main body -->
 	<div id="main-container" class="pages">
     <div>
-      <a id="download-repo" class="btn download-repo" href=""></a>
+      <a id="download-repo" href=""><i class="fa fa-download"></i></a>
     </div>
   </div>
 
@@ -53,9 +53,7 @@
       $("#main-css").attr('href', jsonConfig.mainCSS);
       $("#include-navbar").load(jsonConfig.navbar);
       if (jsonConfig.downloadRepo === true) {
-        alert('download is allowed');
         $("#download-repo").attr('href', jsonConfig.downloadRepoLink);
-        $("#download-repo").text(jsonConfig.downloadButtonText);
       }
       $.get(jsonConfig.markdownFile , function(data) {
         var converter = new showdown.Converter(),
