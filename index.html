@@ -29,8 +29,8 @@
 
   <!--  main body -->
 	<div id="main-container" class="pages">
-    <div>
-      <a id="download-repo" href=""><i class="fa fa-download" aria-hidden="true"></i></a>
+    <div id="download-repo-div" class="hidden">
+      <a id="download-repo" href=""><img id="download-repo-icon"></a>
     </div>
   </div>
 
@@ -69,7 +69,13 @@
           html = converter.makeHtml(data);
         $("#main-container").append(html);
       });
-      if (jsonConfig.downloadRepo === true) {$("#download-repo").attr('href', jsonConfig.downloadRepoLink);}
+      // download icon
+      if (jsonConfig.downloadRepo === true) {
+        $("#download-repo-div").removeClass('hidden');
+        $("#download-repo").attr('href', jsonConfig.downloadRepoLink);
+        $("#download-repo-icon").attr('src', jsonConfig.downloadIcon);
+        $("#download-repo-icon").attr('alt', jsonConfig.downloadIconAlt);
+      }
       // universal footer
 		  $("#include-footer").load(jsonConfig.footer);
     });

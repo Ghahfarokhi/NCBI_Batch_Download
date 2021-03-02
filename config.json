@@ -12,6 +12,8 @@
   "navbar" : "../ghahfarokhi.github.io/common/navbar.html",
   "downloadRepo" : true,
   "downloadRepoLink" : "https://github.com/Ghahfarokhi/NCBI_Batch_Download/archive/master.zip",
+  "downloadIcon": "../ghahfarokhi.github.io/assets/icons/icon_zip_folder.jpg",
+  "downloadIconAlt": "Download .zip",
   "markdownFile" : "README.md",
   "footer" : "../ghahfarokhi.github.io/common/footer.html"
 }
