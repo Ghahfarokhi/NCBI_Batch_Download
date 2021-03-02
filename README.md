@@ -61,25 +61,25 @@ style="width: 500px;"/>
 alt="Accession-Downloader-v1.xlsm for accession numbers" 
 style="width: 500px;"/>
 
-Optionally, a sequence to be annotated on the Genbank file could also be provided:
+3. Optionally, a sequence to be annotated on the Genbank file could also be provided:
 
 <img src="./screenshots/optional-inputs.jpeg" 
 alt="optional inputs" 
 style="width: 500px;"/>
 
-3. Choose if you want (or don’t want) the GenBank files to be saved on your computer and click download. Genbank or fasta files can be found in the same folder where Excel workbooks are stored.
+4. Choose if you want (or don’t want) the GenBank files to be saved on your computer and click download. Genbank or fasta files can be found in the same folder where Excel workbooks are stored.
 
 <img src="./screenshots/genbank-file-download-option.png" 
 alt="options for downloading" 
 style="width: 500px;"/>
 
-4. You can track the progress by checking the Excel status bar. You will be notified when the download is complete. GenBank files will be saved within the folder of the the Excel workbook. Check the "Log" worksheet for the success/failure for each file.
+5. You can track the progress by checking the Excel status bar. You will be notified when the download is complete. GenBank files will be saved within the folder of the the Excel workbook. Check the "Log" worksheet for the success/failure for each file.
 
 <img src="./screenshots/tracking-the-progress.jpeg" 
 alt="tracking the progress" 
 style="width: 500px;"/>
 
-5. There are other additional functions available in the workbooks for Reverse Complement and Translations of the sequences:
+6. There are other additional functions available in the workbooks for Reverse Complement and Translations of the sequences:
 
 <img src="./screenshots/other-avaialable-functions.jpeg" 
 alt="available functions in Excel workbooks - reverse complement, translate, etc." 
