@@ -11,7 +11,8 @@
   "mainCSS" : "../ghahfarokhi.github.io/src/css/main.css",
   "navbar" : "../ghahfarokhi.github.io/common/navbar.html",
   "downloadRepo" : true,
-  "downloadRepoLink" : "https://",
-  "markdownFile" : "https://raw.githubusercontent.com/Ghahfarokhi/NCBI_Batch_Download/master/README.md",
+  "downloadButtonText" : "Download .zip",
+  "downloadRepoLink" : "https://github.com/Ghahfarokhi/NCBI_Batch_Download/archive/master.zip",
+  "markdownFile" : "README.md",
   "footer" : "../ghahfarokhi.github.io/common/footer.html"
 }

@@ -55,7 +55,7 @@
       if (jsonConfig.downloadRepo === true) {
         alert('download is allowed');
         $("#download-repo").attr('href', jsonConfig.downloadRepoLink);
-        $("#download-repo").text('Download');
+        $("#download-repo").text(jsonConfig.downloadButtonText);
       }
       $.get(jsonConfig.markdownFile , function(data) {
         var converter = new showdown.Converter(),
