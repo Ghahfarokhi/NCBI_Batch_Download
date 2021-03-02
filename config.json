@@ -2,7 +2,7 @@
   "title": "Excel - Batch Sequence Downloader",
   "description" : "Download and annotate genbank files using an Excel workbook",
   "ogTitle" : "Excel - Batch Sequence Downloader",
-  "ogImage" : "data/img/cover.png",
+  "ogImage" : "https://amirtaheri.info/assets/img/GenBank_Batch_Downloader.png",
   "ogDescription" : "Download and annotate genbank files using an Excel workbook",
   "ogUrl" : "https://amirtaheri.info/NCBI_Batch_Download/",
   "ogSiteName" : "amirtaheri.info",
