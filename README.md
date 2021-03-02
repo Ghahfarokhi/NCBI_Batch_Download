@@ -1,9 +1,14 @@
-<img src="./screenshots/RefSeq_Downloader_Header.jpeg" 
-alt="Excel - download and annotate genbank files"/>
-
 # Retrieve and Annotate Sequences from NCBI using Excel
 
+<a href="https://github.com/Ghahfarokhi/ncbi_batch_download" target="_blank">
+<img src="./screenshots/github-repo.png" 
+alt="Github Repo"/></a>
+
 A macro-enabled Excel workbook, which could be used to download and annotate sequences for a large set of genomic coordinates or accession numbers from NCBI using Microsoft Excel workbooks. 
+
+
+<img src="./screenshots/RefSeq_Downloader_Header.jpeg" 
+alt="Excel - download and annotate genbank files"/>
 
 ---
 
@@ -29,14 +34,18 @@ A macro-enabled Excel workbook, which could be used to download and annotate seq
 
 ---
 
+[<img src="../ghahfarokhi.github.io/assets/img/genbank_batch_downloader.png">](https://github.com/Ghahfarokhi/ncbi_batch_download)
+
+---
+
 ## Instruction
 
 #### Youtube
 
 Wath the detailed guideline on youtube:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=T97HnEkpupI
-" target="_blank"><img src="./screenshots/youtube.png" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=T97HnEkpupI" target="_blank">
+<img src="./screenshots/youtube.png" 
 alt="Youtube instruction" style="width: 500px;"/></a>
 
 #### Step-by-step guideline
