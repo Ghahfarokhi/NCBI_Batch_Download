@@ -26,10 +26,11 @@
 	<div id="include-navbar"></div>
 
   <!--  main body -->
-  <div>
-    <a id="download-repo" class="btn download-repo" href=""></a>
+	<div id="main-container" class="pages">
+    <div>
+      <a id="download-repo" class="btn download-repo" href=""></a>
+    </div>
   </div>
-	<div id="main-container" class="pages"></div>
 
   <!-- footer -->
   <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
@@ -56,14 +57,14 @@
         $("#download-repo").attr('href', jsonConfig.downloadRepoLink);
         $("#download-repo").text('Download');
       }
+      $.get(jsonConfig.markdownFile , function(data) {
+        var converter = new showdown.Converter(),
+          html = converter.makeHtml(data);
+        $("#main-container").append(html);
+      });
 		  $("#include-footer").load(jsonConfig.footer);
     });
 		
-    $.get("README.md" , function(data) {
-      var converter = new showdown.Converter(),
-        html = converter.makeHtml(data);
-      $("#main-container").append(html);
-    });
     
 	</script>
 </body>

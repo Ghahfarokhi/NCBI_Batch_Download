@@ -12,5 +12,6 @@
   "navbar" : "../ghahfarokhi.github.io/common/navbar.html",
   "downloadRepo" : true,
   "downloadRepoLink" : "https://",
+  "markdownFile" : "../NCBI_Batch_Download/README.md",
   "footer" : "../ghahfarokhi.github.io/common/footer.html"
 }
