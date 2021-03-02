@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title id="title">Github Page</title>
+  <title id="title"></title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta id="description" name="description" content="">
@@ -22,31 +22,47 @@
 
 </head>
 <body>
+  <!-- nav bar -->
 	<div id="include-navbar"></div>
+
+  <!--  main body -->
+  <div>
+    <a id="download-repo" class="btn download-repo" href=""></a>
+  </div>
 	<div id="main-container" class="pages"></div>
+
+  <!-- footer -->
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+	<script type="IN/Share" data-url=""></script>
 	<div id="include-footer"></div>
 
+  <!-- populate the sections using config.json and README.md -->
 	<script>
-    
-    $.getJSON( "config.json" , function(data) {  
-      $("#title").text( data.title );
-      $("#description").attr('content', data.description );
-      $("#ogTitle").attr('content', data.ogTitle );
-      $("#ogDescription").attr('content', data.ogDescription );
-      $("#ogImage").attr('content', data.ogImage );
-      $("#ogUrl").attr('content', data.ogUrl );
-      $("#ogSiteName").attr('content', data.ogSiteName );
-      $("#ogType").attr('content', data.ogType );
-      $("#icon").attr('href', data.icon );
-      $("#main-css").attr('href', data.mainCSS );
-      $( "#include-navbar" ).load( data.navbar );
-		  $( "#include-footer" ).load( data.footer );
+
+    $.getJSON("config.json" , function(jsonConfig) {  
+      $("#title").text(jsonConfig.title);
+      $("#description").attr('content', jsonConfig.description);
+      $("#ogTitle").attr('content', jsonConfig.ogTitle);
+      $("#ogDescription").attr('content', jsonConfig.ogDescription);
+      $("#ogImage").attr('content', jsonConfig.ogImage);
+      $("#ogUrl").attr('content', jsonConfig.ogUrl);
+      $("#ogSiteName").attr('content', jsonConfig.ogSiteName);
+      $("#ogType").attr('content', jsonConfig.ogType);
+      $("#icon").attr('href', jsonConfig.icon);
+      $("#main-css").attr('href', jsonConfig.mainCSS);
+      $("#include-navbar").load(jsonConfig.navbar);
+      if (jsonConfig.downloadRepo === true) {
+        alert('download is allowed');
+        $("#download-repo").attr('href', jsonConfig.downloadRepoLink);
+        $("#download-repo").text('Download');
+      }
+		  $("#include-footer").load(jsonConfig.footer);
     });
 		
-    $.get( "README.md" , function( data ) {
+    $.get("README.md" , function(data) {
       var converter = new showdown.Converter(),
-        html = converter.makeHtml( data );
-      $( "#main-container" ).append( html );
+        html = converter.makeHtml(data);
+      $("#main-container").append(html);
     });
     
 	</script>

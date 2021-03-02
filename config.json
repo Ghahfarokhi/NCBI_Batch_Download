@@ -10,5 +10,7 @@
   "icon" : "../ghahfarokhi.github.io/assets/img/favicon.ico",
   "mainCSS" : "../ghahfarokhi.github.io/src/css/main.css",
   "navbar" : "../ghahfarokhi.github.io/common/navbar.html",
+  "downloadRepo" : true,
+  "downloadRepoLink" : "https://",
   "footer" : "../ghahfarokhi.github.io/common/footer.html"
 }
